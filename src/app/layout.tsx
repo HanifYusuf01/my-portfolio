@@ -1,6 +1,7 @@
 import { Providers } from "../theme";
 import { Box } from "@chakra-ui/react";
 import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -9,7 +10,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Providers>{children}</Providers>
+        <Providers>
+          <Box  minHeight="100vh" display="flex" flexDirection="column">
+          <Box position="sticky" top="0" zIndex="sticky">
+            <Navbar />
+          </Box>
+          <Box as="main">{children}</Box>
+          <Footer />
+          </Box>
+        </Providers>
       </body>
     </html>
   );

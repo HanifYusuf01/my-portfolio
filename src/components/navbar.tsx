@@ -20,7 +20,7 @@ import { useRouter, usePathname } from "next/navigation";
 
 const navItems = [
   { name: "Home", path: "/" },
-  { name: "Service", path: "" },
+  { name: "Certificate", path: "/certificate" },
   { name: "Experience", path: "/experience" },
   { name: "Project", path: "/project" },
   { name: "Resume", path: "/resume" },
@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <Box>
+    <Box bg="black">
       <IconButton
         size={"md"}
         icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
@@ -65,7 +65,6 @@ const Navbar: React.FC = () => {
         bg={"black"}
         color="white"
         justifyContent="space-between"
-        mt="8"
       >
         {/* First three nav items */}
         <HStack spacing={{ md: 2, lg: 4 }}>

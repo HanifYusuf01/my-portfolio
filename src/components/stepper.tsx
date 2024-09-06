@@ -33,7 +33,7 @@ export default function Steper() {
       <Stepper
         index={activeStep}
         orientation="vertical"
-        height={{ base: "100px", md:"300px", lg:"360px", xl: "300px" }}
+        height={{ base: "100px", md:"370px", lg:"360px", xl: "400px" }}
         gap="0"
         position="relative"
       >
@@ -73,7 +73,7 @@ export default function Steper() {
             {index < steps.length - 1 && (
               <Box
                 borderLeft="2px dashed white"
-                height={{base:"none",md: "100px", lg:"125px", xl:"95px"}}
+                height={{base:"none",md: "130px", lg:"125px", xl:"145px"}}
                 position="absolute"
                 left="40%"
                 transform="translateX(-50%)"

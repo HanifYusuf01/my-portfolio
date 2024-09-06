@@ -4,9 +4,6 @@ import { Box, Text } from "@chakra-ui/react";
 export default function page() {
   return (
     <Box bgColor="#11071F" width="100vw" overflowX="hidden" h="100vh">
-      <Box position="sticky" top="0" zIndex="sticky">
-        <Navbar />
-      </Box>
       <Box display="flex" flexDirection="column" alignItems="center" mt="28" color="white" >
         <Text color={"#71B9FE"} mb="4" fontSize={{base:"50px", md:"100px"}}>
           Contact

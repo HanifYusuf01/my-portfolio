@@ -12,9 +12,6 @@ import Navbar from "@/components/navbar";
 export default function Page() {
   return (
     <Box bgColor="#11071F" width="100vw" overflowX="hidden">
-     <Box position="sticky" top="0" zIndex="sticky">
-        <Navbar />
-      </Box>
       <Hero />
       <FrameWork />
       <Stack />
