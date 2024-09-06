@@ -16,7 +16,7 @@ export default function page () {
             alignItems="center"
             justifyContent="center"
           >
-            <PDFViewer pdfName="HanifYusuf.pdf" />
+            <PDFViewer pdfName="HanifYusuf_2.pdf" />
           </Box>
         </Box>
     </Box>
