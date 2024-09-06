@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
     setActiveItem(pathname);
   }, [pathname]);
 
-  const handleItemClick = (path) => {
+  const handleItemClick = (path: any) => {
     router.push(path);
     setActiveItem(path);
     if (isOpen) onClose();
