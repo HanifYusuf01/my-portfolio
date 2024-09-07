@@ -90,23 +90,6 @@ export default function Hero() {
               a passionate and dedicated software developer with over 3 years of
               experience in building high-quality web and mobile applications.
             </Text>
-            <Flex
-              gap={{base:"2", md:"4"}}
-              mt="4"
-              justifyContent={{ base: "center", md: "flex-start" }}
-            >
-              <Button backgroundColor={"#006CCF"} color="white" p="4">
-                Say Hi
-              </Button>
-              <Button
-                color="white"
-                backgroundColor="black"
-                border="1px"
-                borderColor="white"
-              >
-                Discover my Works
-              </Button>
-            </Flex>
           </Box>
         </Flex>
       </Flex>

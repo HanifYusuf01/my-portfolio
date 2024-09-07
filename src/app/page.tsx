@@ -18,7 +18,6 @@ export default function Page() {
       <WorkExperience />
       <Project />
       <Discussion />
-      <Footer />
     </Box>
   );
 }
