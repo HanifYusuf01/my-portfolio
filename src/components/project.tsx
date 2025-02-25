@@ -5,6 +5,7 @@ import { Box, Flex, Text, Image, Link } from "@chakra-ui/react";
 export default function Project() {
   const clickpayUrl = "https://clickpay.com.ng/";
   const systemsTechUrl = "https://systemstech.com.ng/";
+  const ideasUrl = "https://nextgentech.ng/";
   return (
     <Box bgColor="#11071F" width="100%">
       <Box mx={{base: "2", md:"12", lg:"36", xl:"56"}} mt={{base:"8", md:"60"}} mb="4">
@@ -91,24 +92,27 @@ export default function Project() {
           width={{base:"300px", md: "100%"}}
           fontFamily={"Work Sans Variable"}
         >
-          <Box display={"flex"} flexDirection={{base:"column", md:"row"}}>
+          <Box display={"flex"} alignItems={"center"}  flexDirection={{base:"column", md:"row"}}>
             {" "}
             <Box width={{base:"100%", md:"50%"}}>
               <Box p={{base: "2", md:"8"}}>
               <Text fontWeight="bold" color="white" fontSize={{base:"lg", md:"6xl", lg:"3xl", xl:"6xl"}}>
-                Luminate
+                IDEAS
               </Text>
               <Text color="gray" fontSize={{base: "md", lg:"lg", xl:"2xl"}}>
-              Luminate is a learning Management System (LMS) using modern web technologies. 
-              The system was designed to provide an intuitive and user-friendly interface for both instructors and students. 
-              It has components for managing course content, including lessons, quizzes, and assignments, 
-              allowing instructors to easily create, update, and organize their courses.
+              A World Bank sponsored program aimed at helping young people learn tech skills for free. 
+              The platform facilitates learning through curated courses and mentorship program empowering
+              the next generation of tech entrepenerurs.
+              </Text>
+              <Text color="blue.200" mt="8" fontSize={{base: "md", lg:"xl"}} as={Link}  href={ideasUrl}>
+                View Website
               </Text>
               </Box>
+              
             </Box>
             <Box height="100%" width={{base:"100%", md:"50%"}}>
               <Image
-                src="luminate.svg"
+                src="/Ideas.PNG"
                 alt="avatar"
                 width={{base:"90%", md:"100%"}}
                 height={{base: "20%", md:"100%"}}
