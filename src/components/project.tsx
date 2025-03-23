@@ -6,6 +6,7 @@ export default function Project() {
   const clickpayUrl = "https://clickpay.com.ng/";
   const systemsTechUrl = "https://systemstech.com.ng/";
   const ideasUrl = "https://nextgentech.ng/";
+  const hrisUrl = "http://staff.systemstech.com.ng/"
   return (
     <Box bgColor="#11071F" width="100%">
       <Box mx={{base: "2", md:"12", lg:"36", xl:"56"}} mt={{base:"8", md:"60"}} mb="4">
@@ -80,47 +81,78 @@ export default function Project() {
               </Text>
               </Box>
             </Box>
+       
           </Box>
-        </Box>
-        <Box
-          border="1px"
-          borderColor="white"
-          bg="black"
+          <Box
+            display="flex"
+            flexDirection={{ base: "column", md: "row" }}
+            gap={{ base:"6", md:"6", lg:"12"}}
+            mt="6"
+          >
+  <Box
+          p="4"
           borderRadius="xl"
-          mt={{base:"10", md:"20"}}
-          p={{base:"2", md:"4"}}
-          width={{base:"300px", md: "100%"}}
-          fontFamily={"Work Sans Variable"}
+          bgGradient="linear(to-r, rgba(0, 0, 139, 0.3), rgba(0, 0, 0, 0.3))"
+          backdropFilter="blur(30px)"
+          border="1px solid white"
+          width={{base:"300px", md:"90%"}}
+          height={{base: "430px", md:"550px", lg:"570px", xl:"550px"}}
         >
-          <Box display={"flex"} alignItems={"center"}  flexDirection={{base:"column", md:"row"}}>
-            {" "}
-            <Box width={{base:"100%", md:"50%"}}>
-              <Box p={{base: "2", md:"8"}}>
-              <Text fontWeight="bold" color="white" fontSize={{base:"lg", md:"6xl", lg:"3xl", xl:"6xl"}}>
+          <Image
+                src={"/Ideas.PNG"}
+                alt="star"
+                height={{ base: 40, md:72, lg:"300px", xl: 80 }}
+                width="100%"
+                borderRadius="lg"
+              />
+            <Box mt="4">
+                <Text  color="white" fontSize={{base:"md", lg:"xl"}}>
                 IDEAS
-              </Text>
-              <Text color="gray" fontSize={{base: "md", lg:"lg", xl:"2xl"}}>
-              A World Bank sponsored program aimed at helping young people learn tech skills for free. 
+                </Text>
+                <Text color="rgba(255, 255, 255, 0.8)" fontSize={{base:"sm"}}>
+                A World Bank sponsored program aimed at helping young people learn tech skills for free. 
               The platform facilitates learning through curated courses and mentorship program empowering
               the next generation of tech entrepenerurs.
-              </Text>
-              <Text color="blue.200" mt="8" fontSize={{base: "md", lg:"xl"}} as={Link}  href={ideasUrl}>
+                </Text>
+                <Text color="blue.200" mt="8" fontSize={{base: "md", lg:"xl"}} as={Link}  href={ideasUrl}>
                 View Website
               </Text>
               </Box>
-              
-            </Box>
-            <Box height="100%" width={{base:"100%", md:"50%"}}>
-              <Image
-                src="/Ideas.PNG"
-                alt="avatar"
-                width={{base:"90%", md:"100%"}}
-                height={{base: "20%", md:"100%"}}
-                objectFit="cover"
-              />
-            </Box>
-          </Box>
         </Box>
+        <Box
+          p="4"
+          borderRadius="xl"
+          bgGradient="linear(to-r, rgba(0, 0, 139, 0.3), rgba(0, 0, 0, 0.3))"
+          backdropFilter="blur(30px)"
+          border="1px solid white"
+          width={{base:"300px", md:"90%"}}
+          height={{base: "430px", md:"550px", lg:"570px", xl:"550px"}}
+        >
+           <Image
+                src={"/hris.png"}
+                alt="star"
+                height={{ base: 40, md:72, lg:"300px", xl: 80 }}
+                width="100%"
+                borderRadius="lg"
+              />
+            <Box mt="4">
+                <Text  color="white" fontSize={{base:"md", lg:"xl"}}>
+                SYSTEMSTECHHRIS
+                </Text>
+                <Text color="rgba(255, 255, 255, 0.8)" fontSize={{base:"sm"}}>
+                A World Bank sponsored program aimed at helping young people learn tech skills for free. 
+              The platform facilitates learning through curated courses and mentorship program empowering
+              the next generation of tech entrepenerurs.
+                </Text>
+                <Text color="blue.200" mt="8" fontSize={{base: "md", lg:"xl"}} as={Link}  href={hrisUrl}>
+                View Website
+              </Text>
+              </Box>
+        </Box>
+          </Box>
+        
+        </Box>
+   
       </Box>
     </Box>
   );
