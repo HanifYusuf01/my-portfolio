@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
-import { Box, Flex, Text, Image, Center } from "@chakra-ui/react";
+import { Box, Flex, Text, Image, Center, Heading } from "@chakra-ui/react";
 
 export default function Stack() {
   return (
-    <Box bgColor="#11071F" minHeight="400px" p={4}>
+    <Box bg="#141625" minHeight="400px" p={4}>
   <Box 
     display="flex" 
     flexDirection={["column"]} 
@@ -12,13 +12,17 @@ export default function Stack() {
     justifyContent="center"
     height="100%"
   >
-    <Box maxWidth="600px" mb={4} mt={{base:20, md:32}}>
+    <Heading 
+        fontSize={{ base: "3xl", md: "4xl" }}
+        textAlign="center"
+        bgGradient="linear(to-r, blue.300, rgb(10, 6, 90),  blue.800)"
+        bgClip="text"
+      >
+        SKILLS
+      </Heading>
+    <Box maxWidth="600px" mb={4} mt={{base:20, md:10}}>
       <Text fontSize={{base:"sm", md: "xl", lg:"3xl"}}  fontFamily="Preahvihear" color="white" fontWeight="bold">
-        I am a dedicated and passionate Full Stack Developer with a strong
-        foundation in both frontend and backend technologies. With a
-        comprehensive understanding of the full software development
-        lifecycle, I thrive on creating efficient, scalable, and
-        user-friendly applications.
+       The skills, tools and technologies I use
       </Text>
     </Box>
     <Flex gap="4" mt="4">

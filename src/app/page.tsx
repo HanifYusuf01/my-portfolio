@@ -1,23 +1,25 @@
 "use client";
 import Hero from "@/components/hero";
-import FrameWork from "@/components/frameWorks";
+import FrameWork from "@/components/Service";
 import Stack from "@/components/stack";
-import { Box } from "@chakra-ui/react";
-import WorkExperience from "@/components/workExperience";
+import { Box, Divider } from "@chakra-ui/react";
 import Project from "@/components/project";
-import Discussion from "@/components/discussion";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
+import Services from "@/components/Service";
 
 export default function Page() {
   return (
-    <Box bgColor="#11071F" width="100vw" overflowX="hidden">
+    <Box bg="#141625" width="100vw" overflowX="hidden">
       <Hero />
-      <FrameWork />
+      <Divider/>
+      <Services />
+      <Divider/>
       <Stack />
-      <WorkExperience />
+      <Divider/>
+      <Divider/>
       <Project />
-      <Discussion />
+      <Divider/>
     </Box>
   );
 }

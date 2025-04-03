@@ -21,7 +21,6 @@ import { useRouter, usePathname } from "next/navigation";
 const navItems = [
   { name: "Home", path: "/" },
   { name: "Certificate", path: "/certificate" },
-  { name: "Experience", path: "/experience" },
   { name: "Project", path: "/project" },
   { name: "Resume", path: "/resume" },
   { name: "Contact", path: "/contact" },
@@ -44,7 +43,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <Box bg="black">
+    <Box bg="#141625">
       <IconButton
         size={"md"}
         icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
@@ -62,39 +61,13 @@ const Navbar: React.FC = () => {
         mx={{ md: "20", lg: "36" }}
         border={{ base: "none", md: "1px solid white" }}
         borderRadius={"500px"}
-        bg={"black"}
+        bg="#141625"
         color="white"
         justifyContent="space-between"
       >
         {/* First three nav items */}
-        <HStack spacing={{ md: 2, lg: 4 }}>
-          {navItems.slice(0, 3).map((item, index) => (
-            <Text
-              key={index}
-              cursor="pointer"
-              bg={activeItem === item.path ? "#006CCF" : "transparent"}
-              py={{ md: 2, lg: 3, xl: 4 }}
-              px={{ md: 2, lg: 4, xl: 8 }}
-              borderRadius="40px"
-              onClick={() => handleItemClick(item.path)}
-            >
-              {item.name}
-            </Text>
-          ))}
-        </HStack>
-
-        {/* Avatar Image */}
-        <Image
-          alt="avatar"
-          src="/Avatar_v3.png"
-          width={10}
-          height={10}
-          rounded="3xl"
-        />
-
-        {/* Last three nav items */}
-        <HStack spacing={{ md: 2, lg: 4 }}>
-          {navItems.slice(3).map((item, index) => (
+        <HStack spacing={{ md: 2, lg: 32 }}>
+          {navItems.map((item, index) => (
             <Text
               key={index}
               cursor="pointer"
