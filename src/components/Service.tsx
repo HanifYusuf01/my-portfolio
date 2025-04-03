@@ -39,7 +39,7 @@ export default function Services() {
               <Heading size="lg" color="white">Website Development</Heading>
             </Flex>
             <Text color="whiteAlpha.700" fontSize="sm">
-              I deliver modern, beautiful, pixel-perfect design. Whether it's a landing page or a
+              I deliver modern, beautiful, pixel-perfect design. Whether it is a landing page or a
               business card website, I will make it look great on both desktop and any device.
             </Text>
           </Box>
