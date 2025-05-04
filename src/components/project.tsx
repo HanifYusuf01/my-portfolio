@@ -15,7 +15,7 @@ export default function Project() {
         mb="20"
       >
         <Heading
-          fontSize={{ base: "3xl", md: "4xl" }}
+          fontSize={{ base: "xl", md: "4xl" }}
           mb={12}
           textAlign="start"
           bgGradient="linear(to-r, blue.300, rgb(10, 6, 90),  blue.800)"
@@ -164,7 +164,7 @@ export default function Project() {
               height={{ base: "430px", md: "550px", lg: "570px", xl: "550px" }}
             >
               <Image
-                src={"/hris.png"}
+                src={"/staff-systemstech.png"}
                 alt="star"
                 height={{ base: 40, md: 72, lg: "300px", xl: 80 }}
                 width="100%"

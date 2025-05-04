@@ -13,7 +13,7 @@ export default function Stack() {
     height="100%"
   >
     <Heading 
-        fontSize={{ base: "3xl", md: "4xl" }}
+        fontSize={{ base: "xl", md: "4xl" }}
         textAlign="center"
         bgGradient="linear(to-r, blue.300, rgb(10, 6, 90),  blue.800)"
         bgClip="text"

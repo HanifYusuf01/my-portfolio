@@ -6,7 +6,7 @@ import Navbar from "./navbar";
 export default function Hero() {
   return (
     <Box bg="#141625">
-      <Box position="relative" height="100vh" width="100%">
+      <Box position="relative" mb="6" width="100%">
         <Box
           position="absolute"
           as="image"
@@ -42,7 +42,7 @@ export default function Hero() {
           <Flex
             flex="1"
             height="100%"
-            justifyContent={{ base: "none", md: "space-between" }}
+            justifyContent={{ base: "center", md: "space-between" }}
             gap={2}
             mx={{ base: 0, md: 20, lg: 40, xl: 60 }}
             flexDirection={{ base: "column", md: "row" }}
@@ -52,10 +52,10 @@ export default function Hero() {
           >
             <Box
               order={{ base: 1, md: 2 }}
-              width={{ base: "200px", md: "240px", lg: "280px" }}
+              width={{ base: "full", md: "240px", lg: "280px" }}
               height={{ base: "300px", md: "300px", lg: "360px" }}
               mb={{ base: 8, md: 0 }}
-              ml={{ base: "16", md: "none" }}
+              ml={{ base: "none", md: "none" }}
               rounded={"full"}
             >
               <Image
@@ -70,7 +70,7 @@ export default function Hero() {
 
             <Box
               color="white"
-              width={{base:"50%", md:"50%"}}
+              width={{ md:"50%"}}
               order={{ base: 2, md: 1 }}
               fontFamily={"Josefin Sans Variable"}
             >
@@ -81,7 +81,7 @@ export default function Hero() {
                 <Text
                   bgGradient="linear(to-r,rgb(48, 40, 202),rgb(89, 139, 160))"
                   bgClip="text"
-                  fontSize={{base:"3xl", md:"6xl"}}
+                  fontSize={{base:"lg", md:"4xl", lg:"5xl"}}
                   fontWeight="extrabold"
                 >
                   SOFTWARE DEVELOPER
@@ -107,7 +107,7 @@ export default function Hero() {
                 bgGradient="linear(to-r, blue.300, rgb(10, 6, 90),  blue.800)"
                 color="white"
                 fontWeight="bold"
-                fontSize={"sm"}
+                fontSize={{base:"xs", md:"sm"}}
                 _hover={{
                   bgGradient: "linear(to-r, blue.300, blue.900)",
                 }}

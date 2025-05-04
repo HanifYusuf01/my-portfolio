@@ -36,7 +36,7 @@ export default function Services() {
           >
             <Flex align="center" mb={4}>
               <Icon as={FaLaptopCode} color="#3182CE" boxSize={6} mr={3} />
-              <Heading size="lg" color="white">Website Development</Heading>
+              <Heading size={{base:"sm", md:"lg"}} color="white">Website Development</Heading>
             </Flex>
             <Text color="whiteAlpha.700" fontSize="sm">
               I deliver modern, beautiful, pixel-perfect design. Whether it is a landing page or a
@@ -61,7 +61,7 @@ export default function Services() {
           >
             <Flex align="center" mb={4}>
               <Icon as={FaPalette} color="#3182CE" boxSize={6} mr={3} />
-              <Heading size="lg" color="white">Web Design</Heading>
+              <Heading size={{base:"sm", md:"lg"}} color="white">Web Design</Heading>
             </Flex>
             <Text color="whiteAlpha.700" fontSize="sm">
               I can design your website from scratch. I create modern, simple, and user-friendly designs that match your brand and goals.
@@ -81,7 +81,7 @@ export default function Services() {
           >
             <Flex align="center" mb={4}>
               <Icon as={FaWordpress} color="#3182CE" boxSize={6} mr={3} />
-              <Heading size="lg" color="white">WordPress Development</Heading>
+              <Heading size={{base:"sm", md:"lg"}} color="white">WordPress Development</Heading>
             </Flex>
             <Text color="whiteAlpha.700" fontSize="sm">
               I build websites on WordPress, making them easy to update and manage. The perfect choice for blogs, small businesses, or portfolios.
