@@ -23,7 +23,7 @@ const navItems = [
   { name: "Certificate", path: "/certificate" },
   { name: "Project", path: "/project" },
   { name: "Resume", path: "/resume" },
-  { name: "Contact", path: "/contact" },
+  // { name: "Contact", path: "/contact" },
 ];
 
 const Navbar: React.FC = () => {
@@ -66,8 +66,30 @@ const Navbar: React.FC = () => {
         justifyContent="space-between"
       >
         {/* First three nav items */}
-        <HStack spacing={{ md: 2, lg: 32 }}>
-          {navItems.map((item, index) => (
+        <HStack spacing={{ md: 2, lg: 4}}>
+          {navItems.slice(0, 2).map((item, index) => (
+            <Text
+              key={index}
+              cursor="pointer"
+              bg={activeItem === item.path ? "#006CCF" : "transparent"}
+              py={{ md: 2, lg: 3, xl: 4 }}
+              px={{ md: 2, lg: 4, xl: 8 }}
+              borderRadius="40px"
+              onClick={() => handleItemClick(item.path)}
+            >
+              {item.name}
+            </Text>
+          ))}
+        </HStack>
+        <Image
+          src="/Avatar_v3.png"
+          alt="avatar"
+          w={{ base: "8", md: "10", lg: "14" }}
+          rounded={"3xl"}
+          objectFit="cover"
+        />
+        <HStack spacing={{ md: 2, lg: 4 }}>
+          {navItems.slice(2, 4).map((item, index) => (
             <Text
               key={index}
               cursor="pointer"
