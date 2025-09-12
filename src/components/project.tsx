@@ -7,6 +7,7 @@ export default function Project() {
   const systemsTechUrl = "https://systemstech.com.ng/";
   const ideasUrl = "https://nextgentech.ng/";
   const hrisUrl = "http://staff.systemstech.com.ng/";
+  const dataupGamingUrl = "https://www.dataupgaming.com/";
   return (
     <Box bg="#141625" width="100%">
       <Box
@@ -184,9 +185,50 @@ export default function Project() {
                   color="rgba(255, 255, 255, 0.8)"
                   fontSize={{ base: "sm" }}
                 >
-                  A comprehensive digital solution designed to centralize and automate HR processes and employee data management. 
-                  The system integrates core HR functionalities including employee records management, 
-                  attendance tracking, payroll processing, benefits administration, and performance evaluation.
+                  A comprehensive digital solution designed to centralize and
+                  automate HR processes and employee data management. The system
+                  integrates core HR functionalities including employee records
+                  management, attendance tracking, payroll processing, benefits
+                  administration, and performance evaluation.
+                </Text>
+              </Box>
+            </Box>
+          </Box>
+          <Box mt="6">
+            <Box
+              p="4"
+              borderRadius="xl"
+              bgGradient="linear(to-r, rgba(0, 0, 139, 0.3), rgba(0, 0, 0, 0.3))"
+              backdropFilter="blur(30px)"
+              border="1px solid white"
+              width={{ base: "300px", md: "100%" }}
+              height={{ base: "430px", md: "550px", lg: "570px", xl: "550px" }}
+            >
+              <Image
+                src={"/dataupgaming.png"}
+                alt="star"
+                height={{ base: 40, md: 72, lg: "300px", xl: 80 }}
+                width="100%"
+                borderRadius="lg"
+              />
+              <Box mt="4">
+                <Flex justifyContent="space-between">
+                  <Text color="white" fontSize={{ base: "md", lg: "xl" }}>
+                    DATAUP GAMING
+                  </Text>
+                  <Box as={Link} href={dataupGamingUrl}>
+                    <CiShare1 color="white" size={20} />
+                  </Box>
+                </Flex>
+
+                <Text
+                  color="rgba(255, 255, 255, 0.8)"
+                  fontSize={{ base: "sm" }}
+                >
+                  DataUp Gaming is a convenient and reliable platform for all
+                  your gaming needs. We offer a wide variety of services to make
+                  your gaming experience smoother and more enjoyable. Join the
+                  DataUp Gaming community today and power up your play!
                 </Text>
               </Box>
             </Box>
